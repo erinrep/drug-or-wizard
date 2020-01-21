@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  font-size: 1em;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+
+.item-description {
+  max-width: 21em;
+  text-align: left;
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+section {
+  text-align: center;
+}

@@ -34,7 +34,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="App">
+    <main className="App">
       <h1>Drug or Wizard?</h1>
       <section 
         aria-label="final-results"
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         {usedNames.length === NUM_QUESTIONS && (
           <>
             <p>You got {numCorrect} of {NUM_QUESTIONS} correct!</p>
-            <button onClick={resetGame}>play again</button>
+            <button onClick={resetGame}>play again with different questions</button>
           </>
         )}
       </section>
@@ -97,7 +97,7 @@ const App: React.FC = () => {
           </>
         )}
       </section>
-    </div>
+    </main>
   );
 }
 

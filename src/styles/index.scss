@@ -1,0 +1,9 @@
+$image-path: "~@cmsgov/ds-medicare-gov/dist/images";
+@import "~@cmsgov/ds-medicare-gov/dist/scss/index";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}

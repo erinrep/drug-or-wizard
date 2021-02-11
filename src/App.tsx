@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import { Button } from "@cmsgov/ds-medicare-gov";
 import { getRandomItem } from "./helpers/dataHelpers";
 import { ItemType } from "./@types";
 
@@ -34,8 +34,8 @@ const App: React.FC = () => {
   }
 
   return (
-    <main className="App">
-      <h1>Drug or Wizard?</h1>
+    <main className="App ds-u-margin--2 ds-u-sm-margin--7">
+      <h1 className="ds-h1">Drug or Wizard?</h1>
       <section 
         aria-label="final-results"
         aria-live="polite"
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         {usedNames.length === NUM_QUESTIONS && (
           <>
             <p>You got {numCorrect} of {NUM_QUESTIONS} correct!</p>
-            <button onClick={resetGame}>play again with different questions</button>
+            <Button variation="primary" onClick={resetGame}>play again with different questions</Button>
           </>
         )}
       </section>
@@ -65,13 +65,13 @@ const App: React.FC = () => {
                   <p>
                     {currentItem.name}
                   </p>
-                  <button onClick={() => checkAnswer(ItemType.DRUG)}>
+                  <Button variation="primary" onClick={() => checkAnswer(ItemType.DRUG)}>
                     drug
-                  </button>
+                  </Button>
                   {" "}or{" "}
-                  <button onClick={() => checkAnswer(ItemType.WIZARD)}>
+                  <Button className="ds-c-button--primary-alt" onClick={() => checkAnswer(ItemType.WIZARD)}>
                     wizard
-                  </button>
+                  </Button>
                 </>
               )}
             </section>
@@ -90,7 +90,7 @@ const App: React.FC = () => {
                     }
                   </p>
                   <p className="item-description">{currentItem.name} {currentItem.description}</p>
-                  <button onClick={resetQuestion}>next</button>
+                  <Button variation="primary" onClick={resetQuestion}>next</Button>
                 </>
               )}
             </section>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-import { getRandomItem } from './helpers/dataHelpers';
-import { ItemType } from './@types';
+import React, { useState } from "react";
+import "./App.css";
+import { getRandomItem } from "./helpers/dataHelpers";
+import { ItemType } from "./@types";
 
 const NUM_QUESTIONS = 5;
 

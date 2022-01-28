@@ -27,6 +27,11 @@ const items: Item[] = [
     type: ItemType.DRUG
   },
   {
+    name: "Zocor",
+    description: "can treat high cholesterol and triglyceride levels.",
+    type: ItemType.DRUG
+  },
+  {
     name: "Allanon",
     description: "is a main character in The Shannara Chronicles. He is the last remaining member of the Druids of Paranor.",
     type: ItemType.WIZARD

@@ -55,6 +55,11 @@ const items: Item[] = [
     name: "Raistlin",
     description: "Majere is a fictional character from the Dragonlance series of books created by Margaret Weis and Tracy Hickman.",
     type: ItemType.WIZARD
+  },
+  {
+    name: "Vainamoinen",
+    description: "is a Finnish folklore hero. He was described as an old and wise man, and he possessed a potent, magical singing voice.",
+    type: ItemType.WIZARD
   }
 ]
 

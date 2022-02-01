@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "yarn": "1.22.17",
     "node": "16.13.2"
   },
   "dependencies": {
-    "@cmsgov/ds-medicare-gov": "^3.0.2",
+    "@cmsgov/ds-medicare-gov": "^5.0.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

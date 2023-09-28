@@ -22,14 +22,29 @@ const items: Item[] = [
     type: ItemType.DRUG
   },
   {
+    name: "Halcion",
+    description: "is a sedative used to treat insomnia.",
+    type: ItemType.DRUG
+  },
+  {
     name: "Prinivil",
     description: "is used to treat high blood pressure (hypertension).",
+    type: ItemType.DRUG
+  },
+  {
+    name: "Tazorac",
+    description: "is a vitamin A derivative that can treat psoriasis and acne.",
     type: ItemType.DRUG
   },
   {
     name: "Zocor",
     description: "can treat high cholesterol and triglyceride levels.",
     type: ItemType.DRUG
+  },
+  {
+    name: "Alatar",
+    description: "the blue is one of the five Istari in Tolkien's legendarium.",
+    type: ItemType.WIZARD
   },
   {
     name: "Allanon",
@@ -54,6 +69,11 @@ const items: Item[] = [
   {
     name: "Raistlin",
     description: "Majere is a fictional character from the Dragonlance series of books created by Margaret Weis and Tracy Hickman.",
+    type: ItemType.WIZARD
+  },
+  {
+    name: "Tretiak",
+    description: "is the Directorate Wizard in The Chronicles of Blood and Stone.",
     type: ItemType.WIZARD
   },
   {

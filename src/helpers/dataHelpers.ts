@@ -1,4 +1,4 @@
-import { ItemType, Item } from "../@types"
+import { ItemType, type Item } from "../@types"
 
 const items: Item[] = [
   {

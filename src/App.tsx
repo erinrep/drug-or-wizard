@@ -35,7 +35,7 @@ const App: React.FC = () => {
 
   return (
     <main className="App ds-u-margin--2 ds-u-sm-margin--7">
-      <h1 className="ds-h1">Drug or Wizard?</h1>
+      <h1 className="ds-text-heading--3xl">Drug or Wizard?</h1>
       <section 
         aria-label="final-results"
         aria-live="polite"
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         {usedNames.length === NUM_QUESTIONS && (
           <>
             <p>You got {numCorrect} of {NUM_QUESTIONS} correct!</p>
-            <Button variation="primary" onClick={resetGame}>play again with different questions</Button>
+            <Button variation="solid" className="ds-u-margin-top--4" onClick={resetGame}>play again with different questions</Button>
           </>
         )}
       </section>
@@ -65,13 +65,15 @@ const App: React.FC = () => {
                   <p>
                     {currentItem.name}
                   </p>
-                  <Button variation="primary" onClick={() => checkAnswer(ItemType.DRUG)}>
+                  <p>
+                  <Button variation="solid" onClick={() => checkAnswer(ItemType.DRUG)}>
                     drug
                   </Button>
                   {" "}or{" "}
-                  <Button className="ds-c-button--primary-alt" onClick={() => checkAnswer(ItemType.WIZARD)}>
+                  <Button variation="solid" isAlternate onClick={() => checkAnswer(ItemType.WIZARD)}>
                     wizard
                   </Button>
+                  </p>
                 </>
               )}
             </section>
@@ -90,7 +92,7 @@ const App: React.FC = () => {
                     }
                   </p>
                   <p className="item-description">{currentItem.name} {currentItem.description}</p>
-                  <Button variation="primary" onClick={resetQuestion}>next</Button>
+                  <Button variation="solid" className="ds-u-margin-top--4" onClick={resetQuestion}>next</Button>
                 </>
               )}
             </section>

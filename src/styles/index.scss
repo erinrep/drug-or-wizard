@@ -1,5 +1,6 @@
-$image-path: "~@cmsgov/ds-medicare-gov/dist/images";
-@import "~@cmsgov/ds-medicare-gov/dist/scss/index";
+$image-path: "@cmsgov/ds-medicare-gov/dist/images";
+@use "@cmsgov/ds-medicare-gov/dist/css/index";
+@use "@cmsgov/ds-medicare-gov/dist/css/medicare-theme";
 
 .App {
   display: flex;

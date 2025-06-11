@@ -27,6 +27,11 @@ const items: Item[] = [
     type: ItemType.DRUG
   },
   {
+    name: "Malathion",
+    description: "can treat head lice.",
+    type: ItemType.DRUG
+  },
+  {
     name: "Prinivil",
     description: "is used to treat high blood pressure (hypertension).",
     type: ItemType.DRUG
@@ -34,6 +39,11 @@ const items: Item[] = [
   {
     name: "Tazorac",
     description: "is a vitamin A derivative that can treat psoriasis and acne.",
+    type: ItemType.DRUG
+  },
+  {
+    name: "Wixela",
+    description: "is used to control and prevent symptoms of asthma and COPD",
     type: ItemType.DRUG
   },
   {

@@ -66,11 +66,11 @@ const App: React.FC = () => {
                     {currentItem.name}
                   </p>
                   <p>
-                  <Button variation="solid" onClick={() => checkAnswer(ItemType.DRUG)}>
+                  <Button variation="solid" className="ds-u-margin-right--1" onClick={() => checkAnswer(ItemType.DRUG)}>
                     drug
                   </Button>
                   {" "}or{" "}
-                  <Button variation="solid" isAlternate onClick={() => checkAnswer(ItemType.WIZARD)}>
+                  <Button variation="solid" isAlternate className="ds-u-margin-left--1" onClick={() => checkAnswer(ItemType.WIZARD)}>
                     wizard
                   </Button>
                   </p>
